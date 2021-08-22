@@ -1,0 +1,497 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #712130;
+  background-image: url("../Multimedia/panPrueba2.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../Fuentes/Open_Sans/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url("../Fuentes/Philosopher/Philosopher-Italic.ttf");
+}
+@font-face {
+  font-family: "Sarabun";
+  src: url("../Fuentes/Sarabun/Sarabun-Light.ttf");
+}
+/* Primero, el header */
+header {
+  background-color: blanchedalmond;
+}
+header a:link, header a:visited {
+  text-decoration: none;
+  color: #712130;
+}
+
+.listaMenu {
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+ul ul {
+  position: absolute;
+  display: none;
+  left: -10px;
+}
+ul li:hover ul {
+  display: block;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: #712130;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #712130;
+}
+
+.navbar {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* Tuve que arreglarlo porque bootstrap me lo pisaba */
+.listaHeader {
+  font-family: "Open Sans";
+  color: #712130;
+  font-size: 23px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  transition: all 1s;
+}
+.listaHeader:hover {
+  text-shadow: 2px 2px 4px black;
+}
+
+.subMenu {
+  margin-left: 17px;
+  padding: 0 0;
+  background-color: blanchedalmond;
+}
+
+.subItem {
+  text-shadow: none;
+}
+.subItem:hover {
+  text-shadow: 2px 2px 4px black;
+  background-color: #f3dbb6;
+}
+
+.logoHeader {
+  width: 46%;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+
+.imgTienda {
+  display: inline-block;
+  position: absolute;
+  top: 33%;
+  right: 3%;
+  width: 30px;
+}
+.imgTienda:hover {
+  content: url(../Multimedia/carritoComprasHover.png);
+}
+
+/* Fin header */
+/* Sección Historia */
+#Historia {
+  background-color: rgba(113, 33, 48, 0.8);
+  margin: 5% auto;
+  border-top: 2px solid blanchedalmond;
+  border-bottom: 2px solid blanchedalmond;
+}
+
+h1 {
+  font-family: "Philosopher";
+  color: blanchedalmond;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  letter-spacing: normal;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.parrafoHistoria {
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* Fin sección Historia */
+/* Sección Productos */
+/* Hecho con grids */
+.prodGrid4, .prodGrid3, .prodGrid2, .prodGrid1 {
+  width: 75%;
+  margin: 2% 10px 2% 10px;
+  border: 3px solid white;
+  transition: all 0.2s ease-in-out;
+}
+.prodGrid4:hover, .prodGrid3:hover, .prodGrid2:hover, .prodGrid1:hover {
+  transform: scale(1.05);
+}
+
+.textGrid4, .textGrid3, .textGrid2, .textGrid1 {
+  font-family: "Sarabun";
+  font-size: 1em;
+  width: 80%;
+  color: blanchedalmond;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+  transition: all 0.2s ease-in;
+}
+.textGrid4:hover, .textGrid3:hover, .textGrid2:hover, .textGrid1:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  color: blanchedalmond;
+}
+
+#Productos {
+  background-color: rgba(113, 33, 48, 0.8);
+  color: blanchedalmond;
+  border-top: 2px solid blanchedalmond;
+}
+
+h2 {
+  font-family: "Philosopher";
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  text-decoration: 2px whitesmoke underline;
+}
+
+.gridContainer {
+  display: grid;
+  justify-items: center;
+  align-items: stretch;
+  grid-row-gap: 15px;
+  grid-template-areas: "prodGrid1 prodGrid2 prodGrid3 prodGrid4" "textGrid1 textGrid2 textGrid3 textGrid4";
+}
+
+/*Nueva seccion grid areas*/
+.prodGrid1 {
+  grid-area: prodGrid1;
+}
+
+.prodGrid2 {
+  grid-area: prodGrid2;
+}
+
+.prodGrid3 {
+  grid-area: prodGrid3;
+}
+
+.prodGrid4 {
+  grid-area: prodGrid4;
+}
+
+.textGrid1 {
+  grid-area: textGrid1;
+}
+
+.textGrid2 {
+  grid-area: textGrid2;
+}
+
+.textGrid3 {
+  grid-area: textGrid3;
+}
+
+.textGrid4 {
+  grid-area: textGrid4;
+}
+
+/*Fin parte grid area*/
+/* Fin sección Productos */
+/* Sección Elaboración */
+#Elaboracion {
+  border-top: 2px solid blanchedalmond;
+  border-bottom: 2px solid blanchedalmond;
+}
+
+.contenedorCarousel {
+  width: 70%;
+}
+
+/* clase de bootstrap donde tenía que corregir algunas propiedades predeterminadas */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: blanchedalmond;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.estiloBordeCarousel {
+  border: 2px solid blanchedalmond;
+  border-radius: 30px;
+}
+
+/* Fin seccion Elaboración */
+/* Sección Compras */
+#Comprar {
+  background-color: rgba(113, 33, 48, 0.8);
+  border-bottom: 2px solid blanchedalmond;
+  margin-bottom: 5%;
+}
+#Comprar h2 {
+  padding-bottom: 35px;
+}
+
+.compras {
+  display: grid;
+  grid-template-areas: "gridTitle gridTitle" "gridMap gridParagraph";
+  justify-content: space-around;
+  align-items: center;
+}
+
+.parrafoSedes {
+  max-width: 484px;
+  font-size: large;
+}
+
+.mapa {
+  margin: 10px 10px 25px 25px;
+  width: 450px;
+  height: 300px;
+  border: 5px inset lightcoral;
+}
+
+/* Seccion declaración grid */
+.gridTitle {
+  grid-area: gridTitle;
+}
+
+.gridMap {
+  grid-area: gridMap;
+}
+
+.gridParagraph {
+  grid-area: gridParagraph;
+}
+
+/* Fin seccion declaración grid */
+/* Fin sección compras */
+/* Contacto */
+.formText {
+  font-family: "Sarabun";
+  font-size: 1em;
+  color: blanchedalmond;
+}
+
+#Formulario {
+  background-color: rgba(113, 33, 48, 0.8);
+  margin: 5% auto;
+  border-top: 2px solid blanchedalmond;
+  border-bottom: 2px solid blanchedalmond;
+}
+
+/* Footer */
+footer {
+  background-color: #291d20;
+  border-top: 2px solid blanchedalmond;
+}
+
+.imgFooter1 {
+  margin: 10px auto;
+  width: 30%;
+}
+
+.imgFooter2 {
+  margin: 10px 0 10px 35px;
+}
+
+.parrafoFooter {
+  margin-bottom: 0;
+}
+
+.divRedes {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.red {
+  width: 60px;
+  transition: all 0.5s ease-in-out;
+}
+
+.facebook:hover {
+  content: url(../Multimedia/pngFacebook2.png);
+  transform: rotate(0.25turn) rotate(0.25turn) rotate(0.25turn) rotate(0.25turn);
+}
+
+.instagram:hover {
+  content: url(../Multimedia/pngInstagram2.png);
+  transform: rotate(0.25turn) rotate(0.25turn) rotate(0.25turn) rotate(0.25turn);
+}
+
+.linkedIn:hover {
+  content: url(../Multimedia/pngLinkedin2.png);
+  transform: rotate(0.25turn) rotate(0.25turn) rotate(0.25turn) rotate(0.25turn);
+}
+
+.fixed {
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  z-index: 1;
+}
+
+/* Media Query, por el momento de prueba */
+/* Tengo que adaptarlo con sass en cada item, pero no llegué con el tiempo aún */
+@media only screen and (max-width: 576px) {
+  .gridContainer {
+    grid-template-areas: "prodGrid1" "textGrid1" "prodGrid2" "textGrid2" "prodGrid3" "textGrid3" "prodGrid4" "textGrid4";
+  }
+
+  .compras {
+    grid-template-areas: "gridTitle" "gridMap" "gridParagraph";
+  }
+
+  .imgTienda {
+    top: 25%;
+  }
+
+  .estiloBordeCarousel {
+    border: none;
+    border-radius: 0;
+  }
+
+  .contenedorCarousel {
+    width: 100%;
+  }
+
+  .navbarImg {
+    display: none;
+  }
+
+  .parrafoFooter {
+    display: none;
+  }
+
+  .imgFooter1 {
+    width: 45%;
+  }
+
+  .imgFooter2 {
+    display: none;
+  }
+
+  .red {
+    width: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .parrafoSedes {
+    font-size: medium;
+  }
+
+  .mapa {
+    width: 100%;
+    height: 280px;
+    margin: 0 0 10px 0;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .gridContainer {
+    grid-template-areas: "prodGrid1 prodGrid2" "textGrid1 textGrid2" "prodGrid3 prodGrid4" "textGrid3 textGrid4";
+  }
+
+  .compras {
+    grid-template-areas: "gridTitle" "gridMap" "gridParagraph";
+  }
+
+  .imgTienda {
+    top: 25%;
+  }
+
+  .navbarImg {
+    display: none;
+  }
+
+  .parrafoFooter {
+    display: none;
+  }
+
+  .imgFooter1 {
+    width: 45%;
+  }
+
+  .imgFooter2 {
+    display: none;
+  }
+
+  .red {
+    width: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .parrafoSedes {
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .navbarImg {
+    display: none;
+  }
+
+  .parrafoFooter {
+    display: none;
+  }
+
+  .imgFooter1 {
+    width: 50%;
+  }
+
+  .imgFooter2 {
+    display: none;
+  }
+
+  .red {
+    width: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .parrafoSedes {
+    font-size: medium;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

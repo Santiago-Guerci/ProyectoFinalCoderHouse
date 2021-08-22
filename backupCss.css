@@ -1,0 +1,490 @@
+/* Css de axelcocina */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('Fuentes/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('Fuentes/Philosopher/Philosopher-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Sarabun';
+    src: url('Fuentes/Sarabun/Sarabun-Light.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #712130;
+    background-image: url('multimedia/panPrueba2.jpg');
+    background-size: cover;
+}
+
+.display {
+    display: inline-block;
+}
+
+/* Primero, el header */
+
+header {
+    background-color: blanchedalmond;
+    /* width: 100%; */
+    /* border-bottom: 2px solid black; */
+}
+
+.listaMenu {
+    /* display: flex; */
+    align-items: center;
+}
+
+/* Esto me ordena el header con flex, el resto es lo que escribí para hacer el submenú segun lo que indicaban las diapositivas */
+
+header a:link {
+    text-decoration: none;
+    color: #712130;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: #712130;
+}
+
+ul {
+    list-style: none;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    left: -10px;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.listaHeader {
+    font-family: 'Open Sans';
+    color: #712130;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    transition: all 1s;
+}
+
+.listaHeader:hover {
+    text-shadow: 2px 2px 4px black;
+}
+
+.subMenu {
+    margin-left: 26px;
+    padding: 0 0;
+    /* text-shadow: none; */
+    background-color: blanchedalmond;
+    /* display: block;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 200px; */
+}
+
+.subItem {
+    text-shadow: none;
+}
+
+.subItem:hover {
+    text-shadow: 2px 2px 4px black;
+    background-color: rgb(243, 219, 182);
+}
+
+.logoHeader {
+    width: 46%;
+    /* padding-top: 5px; */
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+}
+
+.imgTienda {
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: 3%;
+    width: 30px;
+}
+
+.imgTienda:hover {
+    content: url(multimedia/carritoComprasHover.png);
+}
+
+/* Fin header */
+
+/* Sección Historia */
+
+#Historia {
+    background-color: rgb(113, 33, 48, .8);
+    /* padding-bottom: 25px; */
+    /* text-align: center; */
+    margin: 5% auto;
+    border-top: 2px solid blanchedalmond;
+    border-bottom: 2px solid blanchedalmond;
+}
+
+h1 {
+    font-family: 'Philosopher';
+    color: blanchedalmond;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    letter-spacing: normal;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.parrafoHistoria {
+    padding-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Fin sección Historia */
+
+/* Sección Productos */ /* Hecho con grids */
+
+#Productos {
+    background-color: rgb(113, 33, 48, .8);
+    color: blanchedalmond;
+    border-top: 2px solid blanchedalmond;
+}
+
+h2 {
+    font-family: 'Philosopher';
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-decoration: 2px whitesmoke underline;
+}
+
+.gridContainer {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto; */
+    justify-items: center;
+    align-items: stretch; 
+    grid-row-gap: 15px;
+    grid-template-areas: "prodGrid1 prodGrid2 prodGrid3 prodGrid4"
+                         "textGrid1 textGrid2 textGrid3 textGrid4";
+}
+
+.imgProd {
+    width: 75%;
+    margin: 2% 10px 2% 10px;
+    /* width: 100%; */
+    border: 3px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.imgProd:hover {
+    transform: scale(1.05);
+}
+
+.colStyle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.descLink {
+    font-family: 'Sarabun';
+    font-size: 1em;
+    width: 80%;
+    color: blanchedalmond;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    transition: all 0.2s ease-in;
+}
+
+.descLink:hover {
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 3px;
+    color: blanchedalmond;
+}
+
+/*Nueva seccion grid areas*/
+
+.prodGrid1 {
+    grid-area: prodGrid1;
+}
+.prodGrid2 {
+    grid-area: prodGrid2;
+}
+.prodGrid3 {
+    grid-area: prodGrid3;
+}
+.prodGrid4 {
+    grid-area: prodGrid4;
+}
+.textGrid1 {
+    grid-area: textGrid1;
+}
+.textGrid2 {
+    grid-area: textGrid2;
+}
+.textGrid3 {
+    grid-area: textGrid3;
+}
+.textGrid4 {
+    grid-area: textGrid4;
+}
+/*Fin parte grid area*/
+/* Fin sección Productos */
+
+/* Sección Elaboración */
+#Elaboracion {
+    border-top: 2px solid blanchedalmond;
+    border-bottom: 2px solid blanchedalmond;
+}
+
+.contenedorCarousel {
+    width: 70%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: blanchedalmond;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.estiloBordeCarousel {
+    border: 2px solid blanchedalmond;
+    border-radius: 30px;
+}
+
+/* Sección Compras */
+
+#Comprar {
+    background-color: rgb(113, 33, 48, .8);
+    border-bottom: 2px solid blanchedalmond;
+    margin-bottom: 5%;
+}
+
+.compras { 
+    display: grid;
+    grid-template-areas: "gridTitle gridTitle gridTitle"
+                         "gridMap gridList gridParagraph";
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Comprar h2 {
+    padding-bottom: 35px;
+}
+
+.listaSedes {
+    line-height: 50px;
+}
+
+.parrafoSedes {
+    width: 400px;
+    padding-right: 30px;
+    font-size: large;
+}
+
+.elementoLista {
+    font-family: 'Sarabun';
+    font-size: 25px;
+    color: blanchedalmond;
+    
+}
+
+.mapa {
+    margin: 10px 10px 25px 25px;
+}
+
+/* Seccion declaración grid */
+.gridTitle {
+    grid-area: gridTitle;
+}
+.gridMap {
+    grid-area: gridMap;
+}
+.gridList {
+    grid-area: gridList;
+}
+.gridParagraph {
+    grid-area: gridParagraph;
+}
+/* Fin seccion declaración grid */
+/* Fin sección compras */
+
+/* Contacto */
+
+.formText {
+    font-family: 'Sarabun';
+    font-size: 1em;
+    color: blanchedalmond;
+}
+
+#Formulario {
+    background-color: rgb(113, 33, 48, .8);
+    margin: 5% auto;
+    border-top: 2px solid blanchedalmond;
+    border-bottom: 2px solid blanchedalmond;
+}
+
+/* Footer */
+
+footer {
+    background-color: #291d20;
+    border-top: 2px solid blanchedalmond;
+}
+
+.imgFooter1 {
+    margin: 10px auto;
+    width: 30%;
+}
+
+.imgFooter2 {
+    margin: 10px 0 10px 35px;
+}
+
+.parrafoFooter {
+    margin-bottom: 0;
+}
+
+.divRedes {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.red {
+    width: 60px;
+    transition: all 0.5s ease-in-out;
+}
+
+.facebook:hover {
+    content: url(multimedia/pngFacebook2.png);
+    transform: rotate(0.25turn) rotate(0.25turn) rotate(0.25turn) rotate(0.25turn);
+}
+
+.instagram:hover {
+    content: url(multimedia/pngInstagram2.png);
+    transform: rotate(0.25turn) rotate(0.25turn) rotate(0.25turn) rotate(0.25turn);
+}
+
+.linkedIn:hover {
+    content: url(multimedia/pngLinkedin2.png);
+    transform: rotate(0.25turn) rotate(0.25turn) rotate(0.25turn) rotate(0.25turn);
+}
+
+.fixed {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    z-index: 1;
+}
+
+/* footer nav {
+    float: right;
+    padding-right: 250px;
+    padding-top: 50px;
+} */
+
+/* Media Query, por el momento de prueba */
+
+@media only screen and (max-width: 576px) {
+    .gridContainer {
+        grid-template-areas: "prodGrid1"
+                             "textGrid1"
+                             "prodGrid2"
+                             "textGrid2"
+                             "prodGrid3"
+                             "textGrid3"
+                             "prodGrid4"
+                             "textGrid4";
+    }
+    .compras {
+        grid-template-areas: "gridTitle"
+                             "gridMap"
+                             "gridList"
+                             "gridParagraph";
+    }
+    .imgTienda {top: 25%;}
+    .estiloBordeCarousel {
+        border: none;
+        border-radius: 0;
+    }
+    .contenedorCarousel {width: 100%;}
+    .navbarImg {display: none;}
+    .parrafoFooter {display: none;}
+    .imgFooter1 {width: 45%;}
+    .imgFooter2 {display: none;}
+    .red {
+        width: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .gridContainer {
+        grid-template-areas: "prodGrid1 prodGrid2"
+                             "textGrid1 textGrid2"
+                             "prodGrid3 prodGrid4"
+                             "textGrid3 textGrid4";
+    }
+    .compras {
+        grid-template-areas: "gridTitle gridTitle"
+                             "gridMap gridList"
+                             "gridParagraph gridParagraph";
+    }
+    .imgTienda {top: 25%;}
+    .navbarImg {display: none;}
+    .parrafoFooter {display: none;}
+    .imgFooter1 {width: 45%;}
+    .imgFooter2 {display: none;}
+    .red {
+        width: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .navbarImg {display: none;}
+    .parrafoFooter {display: none;}
+    .imgFooter1 {width: 50%;}
+    .imgFooter2 {display: none;}
+    .red {
+        width: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

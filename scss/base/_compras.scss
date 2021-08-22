@@ -1,0 +1,41 @@
+/* Sección Compras */
+@import '../componentes/listas';
+
+#Comprar {
+    background-color: map-get($colores, primarioBg);
+    border-bottom: 2px solid blanchedalmond;
+    margin-bottom: 5%;
+
+    h2 {
+        padding-bottom: 35px;
+    }
+}
+
+.compras { 
+    display: grid;
+    grid-template-areas: "gridTitle gridTitle"
+                         "gridMap gridParagraph";
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parrafoSedes {
+    max-width: 484px;
+    // padding-right: 30px;
+    font-size: large;
+}
+
+.mapa {
+    margin: 10px 10px 25px 25px;
+    width: 450px;
+    height: 300px;
+    border: 5px inset rgb(240, 128, 128);
+}
+
+/* Seccion declaración grid */
+.gridTitle {grid-area: gridTitle;}
+.gridMap {grid-area: gridMap;}
+.gridParagraph {grid-area: gridParagraph;}
+/* Fin seccion declaración grid */
+
+/* Fin sección compras */

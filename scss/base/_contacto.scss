@@ -1,0 +1,14 @@
+/* Contacto */
+
+.formText {
+    font-family: 'Sarabun';
+    font-size: 1em;
+    color: map-get($colores, secundario);
+}
+
+#Formulario {
+    background-color: map-get($colores, primarioBg);
+    margin: 5% auto;
+    border-top: 2px solid blanchedalmond;
+    border-bottom: 2px solid blanchedalmond;
+}
