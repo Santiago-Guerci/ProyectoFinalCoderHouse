@@ -1,4 +1,4 @@
 node_modules/
-*.jpg
-*.txt
+*.jpg/
+*.txt/
 Sin_uso/
