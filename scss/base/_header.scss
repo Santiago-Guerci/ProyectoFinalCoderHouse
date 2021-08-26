@@ -96,5 +96,24 @@ color: map-get($colores, primario);
     &:hover {
         content: url(../Multimedia/carritoComprasHover.png);
     }
+
+    @media only screen and (max-width: 576px) {
+        top: 25%;
+    }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        top: 25%;
+    }
+}
+
+.navbarImg {
+    @media only screen and (max-width: 576px) {
+        display: none;
+    }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        display: none;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+        display: none;
+    }
 }
 /* Fin header */

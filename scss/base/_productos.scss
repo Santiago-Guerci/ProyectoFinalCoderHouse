@@ -25,7 +25,26 @@ h2 {
     grid-row-gap: 15px;
     grid-template-areas: "prodGrid1 prodGrid2 prodGrid3 prodGrid4"
                          "textGrid1 textGrid2 textGrid3 textGrid4";
+
+    @media only screen and (max-width: 576px) {
+        grid-template-areas: "prodGrid1"
+                                "textGrid1"
+                                "prodGrid2"
+                                "textGrid2"
+                                "prodGrid3"
+                                "textGrid3"
+                                "prodGrid4"
+                                "textGrid4";
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        grid-template-areas: "prodGrid1 prodGrid2"
+                             "textGrid1 textGrid2"
+                             "prodGrid3 prodGrid4"
+                             "textGrid3 textGrid4";
+    }
 }
+
 /*Nueva seccion grid areas*/
 .prodGrid1 {
     @extend %imgProd;
@@ -60,4 +79,4 @@ h2 {
     grid-area: textGrid4;
 }
 /*Fin parte grid area*/
-/* Fin sección Productos */
+/*Fin sección Productos*/

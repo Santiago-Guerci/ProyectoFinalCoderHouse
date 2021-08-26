@@ -9,14 +9,43 @@ footer {
 .imgFooter1 {
     margin: 10px auto;
     width: 30%;
+
+    @media only screen and (max-width: 576px) {
+        width: 45%;
+    }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        width: 46%;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+        width: 50%;
+    }
 }
 
 .imgFooter2 {
     margin: 10px 0 10px 35px;
+
+    @media only screen and (max-width: 576px) {
+        display: none;
+    }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        display: none;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+        display: none;
+    }
 }
 
 .parrafoFooter {
     margin-bottom: 0;
+    @media only screen and (max-width: 576px) {
+        display: none;
+    }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        display: none;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+        display: none;
+    }
 }
 
 .divRedes {
@@ -27,6 +56,22 @@ footer {
 .red {
     width: 60px;
     transition: all 0.5s ease-in-out;
+
+    @media only screen and (max-width: 576px) {
+        width: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+        width: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+        width: 53px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .facebook:hover {

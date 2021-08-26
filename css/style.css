@@ -116,6 +116,32 @@ ul li:hover ul {
 .imgTienda:hover {
   content: url(../Multimedia/carritoComprasHover.png);
 }
+@media only screen and (max-width: 576px) {
+  .imgTienda {
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .imgTienda {
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbarImg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .navbarImg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .navbarImg {
+    display: none;
+  }
+}
 
 /* Fin header */
 /* Sección Historia */
@@ -201,6 +227,16 @@ h2 {
   grid-row-gap: 15px;
   grid-template-areas: "prodGrid1 prodGrid2 prodGrid3 prodGrid4" "textGrid1 textGrid2 textGrid3 textGrid4";
 }
+@media only screen and (max-width: 576px) {
+  .gridContainer {
+    grid-template-areas: "prodGrid1" "textGrid1" "prodGrid2" "textGrid2" "prodGrid3" "textGrid3" "prodGrid4" "textGrid4";
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .gridContainer {
+    grid-template-areas: "prodGrid1 prodGrid2" "textGrid1 textGrid2" "prodGrid3 prodGrid4" "textGrid3 textGrid4";
+  }
+}
 
 /*Nueva seccion grid areas*/
 .prodGrid1 {
@@ -236,7 +272,7 @@ h2 {
 }
 
 /*Fin parte grid area*/
-/* Fin sección Productos */
+/*Fin sección Productos*/
 /* Sección Elaboración */
 #Elaboracion {
   border-top: 2px solid blanchedalmond;
@@ -245,6 +281,11 @@ h2 {
 
 .contenedorCarousel {
   width: 70%;
+}
+@media only screen and (max-width: 576px) {
+  .contenedorCarousel {
+    width: 100%;
+  }
 }
 
 /* clase de bootstrap donde tenía que corregir algunas propiedades predeterminadas */
@@ -259,6 +300,12 @@ h2 {
 .estiloBordeCarousel {
   border: 2px solid blanchedalmond;
   border-radius: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .estiloBordeCarousel {
+    border: none;
+    border-radius: 0;
+  }
 }
 
 /* Fin seccion Elaboración */
@@ -278,10 +325,35 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  .compras {
+    grid-template-areas: "gridTitle" "gridMap" "gridParagraph";
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .compras {
+    grid-template-areas: "gridTitle" "gridMap" "gridParagraph";
+  }
+}
 
 .parrafoSedes {
   max-width: 484px;
   font-size: large;
+}
+@media only screen and (max-width: 576px) {
+  .parrafoSedes {
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .parrafoSedes {
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .parrafoSedes {
+    font-size: medium;
+  }
 }
 
 .mapa {
@@ -289,6 +361,13 @@ h2 {
   width: 450px;
   height: 300px;
   border: 5px inset lightcoral;
+}
+@media only screen and (max-width: 576px) {
+  .mapa {
+    width: 100%;
+    height: 280px;
+    margin: 0 0 10px 0;
+  }
 }
 
 /* Seccion declaración grid */
@@ -330,13 +409,58 @@ footer {
   margin: 10px auto;
   width: 30%;
 }
+@media only screen and (max-width: 576px) {
+  .imgFooter1 {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .imgFooter1 {
+    width: 46%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .imgFooter1 {
+    width: 50%;
+  }
+}
 
 .imgFooter2 {
   margin: 10px 0 10px 35px;
 }
+@media only screen and (max-width: 576px) {
+  .imgFooter2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .imgFooter2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .imgFooter2 {
+    display: none;
+  }
+}
 
 .parrafoFooter {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 576px) {
+  .parrafoFooter {
+    display: none;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .parrafoFooter {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .parrafoFooter {
+    display: none;
+  }
 }
 
 .divRedes {
@@ -347,6 +471,27 @@ footer {
 .red {
   width: 60px;
   transition: all 0.5s ease-in-out;
+}
+@media only screen and (max-width: 576px) {
+  .red {
+    width: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .red {
+    width: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .red {
+    width: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .facebook:hover {
@@ -369,129 +514,6 @@ footer {
   bottom: 2%;
   right: 1%;
   z-index: 1;
-}
-
-/* Media Query, por el momento de prueba */
-/* Tengo que adaptarlo con sass en cada item, pero no llegué con el tiempo aún */
-@media only screen and (max-width: 576px) {
-  .gridContainer {
-    grid-template-areas: "prodGrid1" "textGrid1" "prodGrid2" "textGrid2" "prodGrid3" "textGrid3" "prodGrid4" "textGrid4";
-  }
-
-  .compras {
-    grid-template-areas: "gridTitle" "gridMap" "gridParagraph";
-  }
-
-  .imgTienda {
-    top: 25%;
-  }
-
-  .estiloBordeCarousel {
-    border: none;
-    border-radius: 0;
-  }
-
-  .contenedorCarousel {
-    width: 100%;
-  }
-
-  .navbarImg {
-    display: none;
-  }
-
-  .parrafoFooter {
-    display: none;
-  }
-
-  .imgFooter1 {
-    width: 45%;
-  }
-
-  .imgFooter2 {
-    display: none;
-  }
-
-  .red {
-    width: 53px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .parrafoSedes {
-    font-size: medium;
-  }
-
-  .mapa {
-    width: 100%;
-    height: 280px;
-    margin: 0 0 10px 0;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .gridContainer {
-    grid-template-areas: "prodGrid1 prodGrid2" "textGrid1 textGrid2" "prodGrid3 prodGrid4" "textGrid3 textGrid4";
-  }
-
-  .compras {
-    grid-template-areas: "gridTitle" "gridMap" "gridParagraph";
-  }
-
-  .imgTienda {
-    top: 25%;
-  }
-
-  .navbarImg {
-    display: none;
-  }
-
-  .parrafoFooter {
-    display: none;
-  }
-
-  .imgFooter1 {
-    width: 46%;
-  }
-
-  .imgFooter2 {
-    display: none;
-  }
-
-  .red {
-    width: 53px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .parrafoSedes {
-    font-size: medium;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  .navbarImg {
-    display: none;
-  }
-
-  .parrafoFooter {
-    display: none;
-  }
-
-  .imgFooter1 {
-    width: 50%;
-  }
-
-  .imgFooter2 {
-    display: none;
-  }
-
-  .red {
-    width: 53px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .parrafoSedes {
-    font-size: medium;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
