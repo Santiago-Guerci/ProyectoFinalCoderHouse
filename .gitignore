@@ -1,5 +1,3 @@
 node_modules/
-*.jpg/
-*.txt/
+Ignorar/
 Sin_uso/
-backupCss.css/
