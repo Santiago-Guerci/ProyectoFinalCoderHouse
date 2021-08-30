@@ -41,14 +41,6 @@ header a:link, header a:visited {
   align-items: center;
 }
 
-ul {
-  list-style: none;
-}
-ul ul {
-  position: absolute;
-  display: none;
-  left: -10px;
-}
 ul li:hover ul {
   display: block;
 }
@@ -83,7 +75,7 @@ ul li:hover ul {
 }
 
 .subMenu {
-  margin-left: 17px;
+  left: 4px;
   padding: 0 0;
   background-color: blanchedalmond;
 }
@@ -98,6 +90,10 @@ ul li:hover ul {
 
 .logoHeader {
   width: 46%;
+  transition: all 0.5s;
+}
+.logoHeader:hover {
+  transform: scale(1.05);
 }
 
 .navbar-brand {
