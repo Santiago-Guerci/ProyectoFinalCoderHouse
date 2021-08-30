@@ -396,6 +396,10 @@ h2 {
   background-color: blanchedalmond;
   color: #291d20;
   font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #d4b990;
 }
 
 #Formulario {

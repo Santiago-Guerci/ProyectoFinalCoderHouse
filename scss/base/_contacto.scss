@@ -10,6 +10,11 @@
     background-color: map-get($colores, secundario);
     color: map-get($colores, footerBg);
     font-weight: 600;
+    transition: all .5s ease-in-out;
+    
+    &:hover {
+        background-color: rgb(212, 185, 144);
+    }
 }
 
 #Formulario {
