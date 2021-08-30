@@ -392,6 +392,12 @@ h2 {
   color: blanchedalmond;
 }
 
+.btn {
+  background-color: blanchedalmond;
+  color: #291d20;
+  font-weight: 600;
+}
+
 #Formulario {
   background-color: rgba(113, 33, 48, 0.8);
   margin: 5% auto;

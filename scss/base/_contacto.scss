@@ -6,6 +6,12 @@
     color: map-get($colores, secundario);
 }
 
+.btn {
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, footerBg);
+    font-weight: 600;
+}
+
 #Formulario {
     background-color: map-get($colores, primarioBg);
     margin: 5% auto;
