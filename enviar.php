@@ -8,10 +8,21 @@ $ciudad = $_POST['ciudad'];
 $provincia = $_POST['provincia'];
 $codigoPostal = $_POST['codigoPostal'];
 
-$formcontent="De: $nombre $apellido \n Vive en: $provincia";
-$recipient = "santiago.3861@gmail.com";
-$subject = "Mensaje de mi web";
-$mailheader = "De: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+$header = 'From: ' . $email . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
+
+$mensaje = "Este mensaje fue enviado por " . $nombre $apellido . ",\r\n";
+$mensaje .= "Su e-mail es: " . $email . " \r\n";
+$mensaje .= "Es de: " . $ciudad $provincia . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
+
+$para = 'santiago.3861@gmail.com';
+$asunto = 'Mensaje de mi sitio web';
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
+
+header('Location:contacto.html');
 echo "Thank You!";
 ?>
