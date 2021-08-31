@@ -76,30 +76,30 @@
           Contacto
         </h1>
 
-        <form class="row g-3 pt-3">
+        <form class="row g-3 pt-3" action="enviar.php" method="POST" name="contact-form">
           <div class="col-md-6">
-            <label for="inputName4" class="form-label formText"> Nombre </label>
-            <input type="text" class="form-control" id="inputName4">
+            <label for="nombre" class="form-label formText"> Nombre </label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
           </div>
           <div class="col-md-6">
-            <label for="inputSurname4" class="form-label formText"> Apellido </label>
-            <input type="text" class="form-control" id="inputSurname4">
+            <label for="apellido" class="form-label formText"> Apellido </label>
+            <input type="text" class="form-control" id="apellido" name="apellido">
           </div>
           <div class="col-12">
-            <label for="inputAddress" class="form-label formText"> Dirección </label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Calle Falsa 123 B">
+            <label for="direccion" class="form-label formText"> Dirección </label>
+            <input type="text" class="form-control" id="direccion" placeholder="Calle Falsa 123 B" name="direccion">
           </div>
           <div class="col-12">
-            <label for="inputEmail" class="form-label formText"> Correo Electrónico </label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="micorreo@algo.com">
+            <label for="email" class="form-label formText"> Correo Electrónico </label>
+            <input type="email" class="form-control" id="email" placeholder="micorreo@algo.com" name="email">
           </div>
           <div class="col-md-6">
-            <label for="inputCity" class="form-label formText"> Localidad </label>
-            <input type="text" class="form-control" id="inputCity">
+            <label for="ciudad" class="form-label formText"> Localidad </label>
+            <input type="text" class="form-control" id="ciudad" name="ciudad">
           </div>
           <div class="col-md-4">
-            <label for="inputState" class="form-label formText"> Provincia </label>
-            <select id="inputState" class="form-select">
+            <label for="provincia" class="form-label formText"> Provincia </label>
+            <select id="provincia" class="form-select" name="provincia">
               <option selected> Elegí </option>
               <option> Buenos Aires </option>
               <option> Córdoba </option>
@@ -109,8 +109,8 @@
             </select>
           </div>
           <div class="col-md-2">
-            <label for="inputZip" class="form-label formText"> Código Postal </label>
-            <input type="text" class="form-control" id="inputZip">
+            <label for="codigoPostal" class="form-label formText"> Código Postal </label>
+            <input type="text" class="form-control" id="codigoPostal" name="codigoPostal">
           </div>
           <div class="col-12">
             <div class="form-check">
