@@ -1,0 +1,34 @@
+.btn {
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, footerBg);
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+    
+    &:hover {
+        background-color: rgb(212, 185, 144);
+    }
+}
+
+main {
+    background: map-get($colores, primarioBg );
+    text-align: center;
+    padding-bottom: 2rem;
+
+    img {
+        border: 10px inset blanchedalmond;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .tituloError {
+        text-decoration: underline;
+        font-size: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .parrafo404 {
+        font-size: 2.5rem;
+    }
+}

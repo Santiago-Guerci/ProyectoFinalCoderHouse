@@ -522,4 +522,34 @@ footer {
   z-index: 1;
 }
 
+.btn {
+  background-color: blanchedalmond;
+  color: #291d20;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background-color: #d4b990;
+}
+
+main {
+  background: rgba(113, 33, 48, 0.8);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+main img {
+  border: 10px inset blanchedalmond;
+}
+main .row {
+  align-items: center;
+}
+main .tituloError {
+  text-decoration: underline;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+main .parrafo404 {
+  font-size: 2.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
