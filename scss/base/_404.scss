@@ -18,6 +18,15 @@ main {
         border: 10px inset blanchedalmond;
     }
 
+    a {
+        font-family: 'Sarabun';
+        color: map-get($colores, footerBg );
+
+        &:hover {
+            color: map-get($colores, footerBg );
+        }
+    }
+
     .row {
         align-items: center;
     }

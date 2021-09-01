@@ -540,6 +540,13 @@ main {
 main img {
   border: 10px inset blanchedalmond;
 }
+main a {
+  font-family: "Sarabun";
+  color: #291d20;
+}
+main a:hover {
+  color: #291d20;
+}
 main .row {
   align-items: center;
 }
