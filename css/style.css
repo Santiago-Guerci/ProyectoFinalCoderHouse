@@ -540,6 +540,21 @@ main {
 main img {
   border: 10px inset blanchedalmond;
 }
+@media only screen and (max-width: 1200px) {
+  main img {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main img {
+    width: 445px;
+  }
+}
 main a {
   font-family: "Sarabun";
   color: #291d20;
@@ -557,6 +572,21 @@ main .tituloError {
 }
 main .parrafo404 {
   font-size: 2.5rem;
+}
+@media only screen and (max-width: 1199px) {
+  main .parrafo404 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .parrafo404 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main .parrafo404 {
+    padding-top: 22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
