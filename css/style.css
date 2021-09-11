@@ -110,12 +110,17 @@ header a:link, header a:visited {
 }
 @media only screen and (max-width: 576px) {
   .imgTienda {
-    top: 25%;
+    top: 21%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .imgTienda {
-    top: 25%;
+    top: 21%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .imgTienda {
+    top: 21%;
   }
 }
 
