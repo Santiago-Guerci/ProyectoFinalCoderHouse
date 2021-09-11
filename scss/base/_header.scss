@@ -16,23 +16,23 @@ header {
     align-items: center;
 }
 
-ul {
-    // list-style: none;
+// ul {
+//     list-style: none;
 
-    // ul {
-    //     position: absolute;
-    //     display: none;
-    //     left: -10px;
-    // }
+//     ul {
+//         position: absolute;
+//         display: none;
+//         left: -10px;
+//     }
 
-    li {
-        &:hover {
-            ul {
-                display: block;
-            }
-        }
-    }
-}
+//     li {
+//         &:hover {
+//             ul {
+//                 display: block;
+//             }
+//         }
+//     }
+// }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
 color: map-get($colores, primario);

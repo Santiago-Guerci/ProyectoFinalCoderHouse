@@ -41,10 +41,6 @@ header a:link, header a:visited {
   align-items: center;
 }
 
-ul li:hover ul {
-  display: block;
-}
-
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
   color: #712130;
 }
